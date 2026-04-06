@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="X01"/>
+        <attribute name="authors" value="ACER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-09 04:04:02 PM"/>
+        <attribute name="created" value="QUNFUjtNWUhTWkU7MjAyNC0xMC0wOTswMzoxMjo1MCBQTTsyMDM2"/>
+        <attribute name="edited" value="QUNFUjtNWUhTWkU7MjAyNC0xMC0wOTswNDowNDowMiBQTTsyOzIxNDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Termurah, Price, Total" type="Real" array="False" size=""/>
+            <assign variable="total" expression="0"/>
+            <assign variable="Termurah" expression="999"/>
+            <input variable="Price"/>
+            <while expression="Price != 0">
+                <if expression="Price = 0">
+                    <then/>
+                    <else>
+                        <if expression="Price &lt; Termurah">
+                            <then>
+                                <assign variable="Termurah" expression="Price"/>
+                            </then>
+                            <else>
+                                <assign variable="Price" expression="Price"/>
+                            </else>
+                        </if>
+                        <assign variable="Total" expression="Total + Price"/>
+                    </else>
+                </if>
+                <input variable="Price"/>
+            </while>
+            <if expression="Total &gt;= 100">
+                <then>
+                    <assign variable="Total" expression="Total-Termurah"/>
+                </then>
+                <else>
+                    <assign variable="Total" expression="Total"/>
+                </else>
+            </if>
+            <output expression="tofixed(Total,2)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
