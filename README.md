@@ -1,4 +1,4 @@
-# MichaelNasution-Pemrograman-Prosedural
+# MichaelNasution-Pemrograman-Visual
 
 <!-- ================= HEADER ================= -->
 <h1 align="center">⚡ Visual Programming Journey</h1>
