@@ -261,7 +261,7 @@ Text       = Math.atan({1})
 Precedence = 100
 Needed 1   = 100
 Needed 2   = 0
-Text       = String.valueOf({1}.charAt({2}))
+Text       = {1}.charAt({2})
 
 [Cos]
 Precedence = 100

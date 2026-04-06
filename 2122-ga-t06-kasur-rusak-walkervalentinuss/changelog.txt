@@ -1,2 +1,0 @@
-Mencoba menyelesaikan recursive, dengan menggunkan function untuk string yaitu length dan char.
-Mengubah tipe data isPalindrome dari boolean ke string, dan menggati output menjadi "YA" dan "BUKAN"
